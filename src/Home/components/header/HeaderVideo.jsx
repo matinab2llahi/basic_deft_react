@@ -6,7 +6,7 @@ function VideoHandler() {
     const [URL_VIDEO_HEADER] = useContext(Context)
     return (
         <>
-            <video src={URL_VIDEO_HEADER} controls>
+            <video src={URL_VIDEO_HEADER} >
             </video>
         </>
     )
