@@ -3,3 +3,26 @@ video{
     height: 100vh !important;
     object-fit: cover;
 }
+.box_seekber{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    height: 6px;
+}
+.seekber_now{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--grey);
+}
+.seekber_now span{
+    color: var(--white);
+    width: 94px !important;
+    position: absolute;
+    top: -25px;
+    right: -46px;
+    font-weight: bolder;
+}
