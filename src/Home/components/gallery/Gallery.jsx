@@ -7,7 +7,6 @@ import "../../../App.css"
 import 'bootstrap/dist/css/bootstrap.css';
 // add context url here
 import {Context} from "../../../App.jsx";
-
 function Gallery(){
     const [,,URL_GALLERY]=useContext(Context)
     return(

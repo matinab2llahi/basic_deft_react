@@ -5,6 +5,8 @@ import "../../../App.css"
 import "../../style/AboutStyle.css"
 //add bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
+// add style btn hover 
+import '../../style/HoverBtn.css'
 function About(){
     return(
         <>
