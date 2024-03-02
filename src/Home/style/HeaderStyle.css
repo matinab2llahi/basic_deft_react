@@ -7,7 +7,7 @@ header{
 header.active{
     cursor: none;
 }
-.box__fallow_mouse{
+ .box__fallow_mouse{
     position: absolute;
     top: 50%;
     left: 50%;

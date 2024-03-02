@@ -3,8 +3,10 @@ import { Context } from '../../../App'
 import '/src/App.css'
 import '../../style/HeaderStyle.css'
 import "../../style/VideoHandler.css"
+import { ListGroup } from 'react-bootstrap'
 let TimeVideo = 0;
-function VideoHandler({StatusVideo, setStatusVideo}) {
+let toggleVideo = new Boolean
+function VideoHandler({StatusVideo, fallowMouse}) {
     const [URL_VIDEO_HEADER] = useContext(Context)
 
     const videoRef = useRef();
@@ -47,32 +49,35 @@ function VideoHandler({StatusVideo, setStatusVideo}) {
         videoRef.current.currentTime = 0
         videoRef.current.currentTime += Time
         videoRef.current.muted = muted
-        // hoverVideoHeeader.style.display = displayHoverBox
         if(StatusVideo){
+            fallowMouse.current.style.display = "flex"
             SeekberVideo.current.style.display = "none"
         }else {
+            fallowMouse.current.style.display = "none"
             SeekberVideo.current.style.display = "flex"
         }
     }
     useEffect(() => {
         // auto Play
-        // videoRef.current.pause()
         videoRef.current.play()
-        if(StatusVideo ) {
+        if(StatusVideo === true) {
             ChangeVideo(TimeVideo,"flax","none",true)
-            videoRef.current.addEventListener('timeupdate', ()=>{
+            toggleVideo=true
+        }else {
+            ChangeVideo(TimeVideo,"none","flax",false)
+            toggleVideo=false
+        }
+        videoRef.current.addEventListener('timeupdate', ()=>{
+            if(toggleVideo=== true){
                 if(videoRef.current.currentTime >= 40){
                     videoRef.current.currentTime=0
                     videoRef.current.currentTime+=14
                     videoRef.current.play()
                 }
-            })
-        }else {
-            ChangeVideo(TimeVideo,"none","flax",false)
-            videoRef.current.addEventListener('timeupdate', ()=>{
+            }else{
                 changeTimeUpdate(videoRef.current.currentTime, videoRef.current.duration)
-            })
-        }
+            }
+        })
     }, [StatusVideo])
     return (
         <>
