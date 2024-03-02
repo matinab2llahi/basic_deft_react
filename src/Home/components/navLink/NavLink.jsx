@@ -17,11 +17,16 @@ function NavLinkFuction(){
     const navRef = useRef(null);
     // status nav box
     const [max, setMax] = useState(0)
+    const [toggleWhite, setToggleWhite] = useState(new Boolean())
     const setRoot =(name, val)=>{
         document.documentElement.style.setProperty(name, val)
     }
     // update nav hide
     useEffect(() => {
+        if(max===0){
+            setRoot("--white-nav", "#ffffff00")
+            setRoot("--black-nav", "#f1f1f1")
+        }
         document.addEventListener("scroll",()=>{
             if(window.scrollY < 350){
                 setRoot("--white-nav", "#ffffff00")
@@ -48,6 +53,17 @@ function NavLinkFuction(){
         // wight !!!
 
     }, [max]);
+    useEffect(() => {
+
+        setInterval(()=>{
+            if(window.innerWidth <= 1000){
+                setToggleWhite(true)
+            }else{
+                setToggleWhite(false)
+            }
+
+        })
+    }, []);
     return(
         <>
             <Nav ref={navRef}>
@@ -61,23 +77,25 @@ function NavLinkFuction(){
                                   d="M204 17.2h-1.4v1.6h1.4c.5 0 .7-.3.7-.8s-.3-.8-.7-.8zm-.1-.8c1.2 0 1.8.5 1.8 1.6 0 .6-.3 1.1-.9 1.3l1.2 1.8h-1.2l-1.1-1.6h-1.2v1.6h-1.1v-4.7h2.5z"></path>
                         </svg>
                     </div>
-                    <div className="nav_link__items">
+                    <ul className={`nav_link__items ${toggleWhite ? "active" : ""}`}>
                         {
-                            BASC_NAV_LINKS.map((event) => {
+                            BASC_NAV_LINKS.map((event, index) => {
                                 return (
                                     <>
-                                        <NavItem>
-                                            <NavLink className="cta">
-                                                <span className='hover-underline-animation text-uppercase'>{event.text}</span>
-                                            </NavLink>
-                                        </NavItem>
+                                        <li key={index}>
+                                            <NavItem>
+                                                <NavLink className="cta">
+                                                    <span className='hover-underline-animation text-uppercase'>{event.text}</span>
+                                                </NavLink>
+                                            </NavItem>
+                                        </li>
                                     </>
                                 )
                             })
                         }
-                    </div>
-                    <div className="nav_menu__items">
-                        ...
+                    </ul>
+                    <div className={`nav_menu__items ${toggleWhite?"active": "disabled_active"}`}>
+                        {toggleWhite ? "MENU" :"..."}
                     </div>
                 </div>
             </Nav>

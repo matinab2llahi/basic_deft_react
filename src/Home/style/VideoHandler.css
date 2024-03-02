@@ -1,4 +1,4 @@
-video{
+.haderVideo{
     width: 100%;
     height: 100vh !important;
     object-fit: cover;
@@ -16,13 +16,12 @@ video{
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: var(--grey);
 }
 .seekber_now span{
     color: var(--white);
-    width: 94px !important;
+    width: 100px !important;
     position: absolute;
     top: -25px;
-    right: -46px;
+    right: -56px;
     font-weight: bolder;
 }

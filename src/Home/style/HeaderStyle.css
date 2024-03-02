@@ -5,7 +5,7 @@ header{
     overflow: hidden;
 }
 header.active{
-    /*cursor: none;*/
+    cursor: none;
 }
 .box__fallow_mouse{
     position: absolute;

@@ -1,4 +1,4 @@
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import VideoHandler from './HeaderVideo.jsx'
 import '/src/App.css'
 import "../../style/HeaderStyle.css";
@@ -6,6 +6,8 @@ import "../../style/HeaderStyle.css";
 function Header() {
     const headerRef = useRef(null)
     const fallowMouse = useRef(null)
+
+    const [StatusVideo, setStatusVideo] = useState(true)
     useEffect(() => {
         // hover haeder
         headerRef.current.addEventListener("mousemove", (e)=>{
@@ -22,9 +24,9 @@ function Header() {
     }, []);
     return (
         <>
-            <header className="active" ref={headerRef}>
-                <VideoHandler/>
-                <div className='box__fallow_mouse3' ref={fallowMouse}>
+            <header className="active" ref={headerRef} onClick={()=>setStatusVideo(!StatusVideo)}>
+                <VideoHandler StatusVideo={StatusVideo} setStatusVideo={setStatusVideo}/>
+                <div className='box__fallow_mouse' ref={fallowMouse}>
                     <div className="item_top___fallow_mouse">
                         watch rell
                     </div>
