@@ -6,6 +6,7 @@ import Intro from "./intro/Intro.jsx";
 import About from "./about/About.jsx";
 import Gallery from "./gallery/Gallery.jsx";
 import SliderHeader from './slider/SliderHeader.jsx';
+import SliderBody from "./slider/SliderBody.jsx";
 function Home() {
     return (
         <>
@@ -16,6 +17,7 @@ function Home() {
             <Gallery/>
             <section className='sec_slider'>
                 <SliderHeader/>
+                <SliderBody/>
             </section>
         </>
     )

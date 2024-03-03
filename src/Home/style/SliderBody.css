@@ -1,0 +1,31 @@
+.slider_body .slider_items{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*icon*/
+.slider_body .slider_box__icon{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+.slider_body .slider_box__icon img{
+    height: 40px;
+}
+/*text*/
+.slider_body .slider_box__text{
+    position: relative;
+}
+.slider_body .slider_box__text:before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--black);
+    top: 8px;
+    left: 0;
+
+}
