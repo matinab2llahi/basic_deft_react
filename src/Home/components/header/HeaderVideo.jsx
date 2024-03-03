@@ -1,9 +1,9 @@
-import {useContext, useState, useEffect, useRef} from 'react'
+import {useContext, useEffect, useRef} from 'react'
 import { Context } from '../../../App'
 import '/src/App.css'
 import '../../style/HeaderStyle.css'
 import "../../style/VideoHandler.css"
-import { ListGroup } from 'react-bootstrap'
+
 let TimeVideo = 0;
 let toggleVideo = new Boolean
 function VideoHandler({StatusVideo, fallowMouse}) {
@@ -40,8 +40,6 @@ function VideoHandler({StatusVideo, fallowMouse}) {
         if(StatusVideo) {
             SeekberVideo.current.style.display = "none"
             videoRef.current.currentTime += 14
-        }else {
-
         }
     }
     const ChangeVideo =(Time,displayHoverBox,displaySeek,muted)=>{
