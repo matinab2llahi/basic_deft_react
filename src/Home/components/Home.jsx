@@ -7,6 +7,7 @@ import About from "./about/About.jsx";
 import Gallery from "./gallery/Gallery.jsx";
 import SliderHeader from './slider/SliderHeader.jsx';
 import SliderBody from "./slider/SliderBody.jsx";
+import Scroll from "./scroll/Scroll.jsx";
 function Home() {
     return (
         <>
@@ -15,10 +16,11 @@ function Home() {
             <Intro/>
             <About/>
             <Gallery/>
-            <section className='sec_slider'>
+            <section className='sec_slider' style={{overflow:"hidden"}}>
                 <SliderHeader/>
                 <SliderBody/>
             </section>
+            <Scroll/>
         </>
     )
 }
