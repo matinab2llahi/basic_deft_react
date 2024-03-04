@@ -17,13 +17,15 @@ function Gallery(){
                         URL_GALLERY.map((event, index)=>{
                             return(
                                 <li key={index}>
+
+                                    <div className="gallery__img">
+                                        {event.url.split(".mp4").length === 2? <video src={event.url} autoPlay muted loop></video>:<img src={event.url} alt=""/>}
+                                    </div>
                                     <div>
-                                        <div className="gallery__img">
-                                            {event.url.split(".mp4").length === 2? <video src={event.url} autoPlay muted loop></video>:<img src={event.url} alt=""/>}
-                                        </div>
                                         <a className="hover_a">{event.title}</a>
                                         <p className="">{event.body}</p>
                                     </div>
+
                                 </li>
 
                             )
