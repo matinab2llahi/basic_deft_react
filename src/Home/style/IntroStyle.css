@@ -5,7 +5,7 @@
 .home_intro ul{
     padding: 50px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .home_intro li{
     height: 200px;
