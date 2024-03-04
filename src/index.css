@@ -2,8 +2,17 @@ body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /*overflow: hidden;*/
+  background-color: var(--white);
+  transition: background-color 1s;
 }
 *::selection{
   background-color: var(--black);
   color: var(--white);
+}
+h1, p , b{
+  color: var(--black) !important;
+}
+.nav{
+  background-color: var(--white-nav);
 }
