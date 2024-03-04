@@ -31,7 +31,7 @@ function NavLinkFuction(){
             if(window.scrollY < 350){
                 setRoot("--white-nav", "#ffffff00")
                 setRoot("--black-nav", "#f1f1f1")
-            }else{
+            }else if(window.scrollY > 350 && window.scrollY < 1000){
                 setRoot("--black-nav", "#242424")
                 setRoot("--white-nav", "#f1f1f1")
             }
@@ -40,7 +40,7 @@ function NavLinkFuction(){
             }
             if(window.scrollY > 0){
                 //hide
-                navRef.current.style.top = "-22%"
+                navRef.current.style.top = "-25%"
             }
             if(max > window.scrollY){
                 setMax(window.scrollY)

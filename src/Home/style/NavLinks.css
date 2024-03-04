@@ -27,7 +27,7 @@
     padding: 0;
     display: flex;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 55%;
     transform: translateX(-50%);
     transition: all .3s ease-out;
@@ -93,7 +93,7 @@
     font-size: 40px;
     text-align: center;
     width: 40px;
-    top: 25px;
+    top: 28px;
 }
 .nav_menu__items.active{
     top: 50px;
