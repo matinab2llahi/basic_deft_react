@@ -16,7 +16,7 @@ function SliderHeader() {
                     </span>
                 </div>
             </div>
-            <h1 className='text-uppercase fw-bold w-50 '>
+            <h1 className='text-uppercase fw-bold w-75 '>
                 FEATURED ENGAGEMENTS
             </h1>
         </div>

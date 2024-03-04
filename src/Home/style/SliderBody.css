@@ -1,31 +1,93 @@
+.slider_body{
+    /*position: relative;*/
+    cursor: none;
+    overflow: hidden;
+}
 .slider_body .slider_items{
-    height: 65vh;
+    height: 95%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
 }
 /*icon*/
 .slider_body .slider_box__icon{
     display: flex;
     justify-content: start;
     width: 100%;
+    position: relative;
+    margin: 80px 0;
+
 }
+.slider_body .slider__fallow_mouse{
+    position: absolute;
+    top: 2950px;
+    left: 150px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 50%;
+    border: none;
+    background-color: pink;
+    transition: all 200ms;
+    width: 100px !important;
+    height: 100px;
+    color: var(--black) !important;
+    cursor: none;
+}
+.slider_body .slider__fallow_mouse.active{
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.slider_body .slider__fallow_mouse:before,.slider__fallow_mouse:after{
+    position: absolute;
+    content: "";
+    background-color: var(--pink);
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(0 0, 0% 100%, 100% 51%);
+    opacity: 0 !important;
+}
+
+.slider_body .slider__fallow_mouse.active:before,.slider__fallow_mouse.active:after{
+    opacity: 1 !important;
+}
+.slider_body .slider__fallow_mouse:before{
+    top: 45px;
+    left: 10px;
+    transform: rotate(180deg);
+}
+.slider_body .slider__fallow_mouse:after{
+    top: 45px;
+    right: 10px;
+}
+.slider_body .slider__fallow_mouse.active:before{
+    top: 30px;
+    left: -20px;
+}
+.slider_body .slider__fallow_mouse.active:after{
+    right: -20px;
+    top: 30px;
+
+}
+
 .slider_body .slider_box__icon img{
     height: 40px;
 }
-/*text*/
-.slider_body .slider_box__text{
-    position: relative;
-}
-.slider_body .slider_box__text:before{
+.slider_body .slider_box__icon:before{
     content: "";
     position: absolute;
     width: 25px;
     height: 4px;
     border-radius: 4px;
     background-color: var(--black);
-    top: 8px;
+    bottom: -8px;
     left: 0;
 
+}
+.slider_body .slider_box__text{
+    margin-bottom: 10px;
 }
