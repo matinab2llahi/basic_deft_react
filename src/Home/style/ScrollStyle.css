@@ -1,0 +1,18 @@
+.sec_scroll{
+    margin-top: 130px;
+}
+.sec_scroll .scroll {
+    display: flex;
+    position: relative;
+}
+.sec_scroll .scroll_box__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50% !important;
+    position: absolute;
+}
+.sec_scroll .scroll___title{
+    font-weight: bold;
+    font-size: 60px;
+}
