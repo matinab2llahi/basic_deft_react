@@ -8,6 +8,7 @@ import Gallery from "./gallery/Gallery.jsx";
 import SliderHeader from './slider/SliderHeader.jsx';
 import SliderBody from "./slider/SliderBody.jsx";
 import Scroll from "./scroll/Scroll.jsx";
+import News from "./news/News.jsx";
 function Home() {
     return (
         <>
@@ -20,8 +21,8 @@ function Home() {
                 <SliderHeader/>
                 <SliderBody/>
             </section>
-
             <Scroll/>
+            <News/>
         </>
     )
 }

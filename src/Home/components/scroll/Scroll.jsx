@@ -6,6 +6,7 @@ import '../../style/ScrollStyle.css'
 import '/src/App.css'
 // add bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
+//add components video
 import ScroolVideo from "./ScroolVideo.jsx";
 
 function Scroll(){
@@ -15,7 +16,7 @@ function Scroll(){
     const textbox=useRef(null)
     useEffect(() => {
         document.addEventListener("scroll",()=>{
-            if(window.scrollY>3040){
+            if(window.scrollY>3040 && window.scrollY<4300){
                 document.documentElement.style.setProperty("--white","#242424")
                 document.documentElement.style.setProperty("--black","#f9cdcd")
                 document.documentElement.style.setProperty("--white-nav","#242424")
@@ -26,7 +27,12 @@ function Scroll(){
                 document.documentElement.style.setProperty("--white-nav","#f1f1f1")
                 document.documentElement.style.setProperty("--black-nav","#242424")
             }
-            console.log((window.scrollY))
+            if(window.scrollY>4300){
+                document.documentElement.style.setProperty("--white","#f1f1f1")
+                document.documentElement.style.setProperty("--black","#242424")
+                document.documentElement.style.setProperty("--white-nav","#f1f1f1")
+                document.documentElement.style.setProperty("--black-nav","#242424")
+            }
 
         })
 

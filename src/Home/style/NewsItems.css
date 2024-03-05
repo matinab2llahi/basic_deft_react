@@ -1,0 +1,30 @@
+.sec_news .news_box__body{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sec_news .news_box__body li{
+    display: flex;
+    margin-top: 20px !important;
+    padding-top: 40px !important;
+    height: 100%;
+    position: relative;
+}
+.sec_news .news_box__body li:before{
+    content: "";
+    width: 100%;
+    border-radius: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    background-color: var(--black);
+}
+.sec_news .news_box__body img{
+    width: 300px;
+}
+.sec_news .news_box__body .news_items__text{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
