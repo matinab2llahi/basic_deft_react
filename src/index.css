@@ -4,7 +4,7 @@ body{
   scroll-behavior: smooth;
   /*overflow: hidden;*/
   background-color: var(--white);
-  transition: background-color 1s;
+  transition: background .4s linear;
 }
 *::selection{
   background-color: var(--black);

@@ -1,16 +1,18 @@
 .sec_scroll{
+    position: sticky;
     margin-top: 130px;
 }
 .sec_scroll .scroll {
+    position: sticky;
     display: flex;
-    position: relative;
 }
 .sec_scroll .scroll_box__text{
-    position: absolute;
-    top: 0;
+    transition: top .3s;
+    position: sticky;
+    top: 140px;
+    height: fit-content;
     left: 0;
     width: 50% !important;
-    position: absolute;
 }
 .sec_scroll .scroll___title{
     font-weight: bold;

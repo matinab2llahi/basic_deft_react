@@ -20,6 +20,7 @@ function Home() {
                 <SliderHeader/>
                 <SliderBody/>
             </section>
+
             <Scroll/>
         </>
     )

@@ -11,31 +11,22 @@ import ScroolVideo from "./ScroolVideo.jsx";
 function Scroll(){
     // start root 2970
     // end root 3940
-    // top 3160
+    // top 3380
     const textbox=useRef(null)
     useEffect(() => {
         document.addEventListener("scroll",()=>{
-            if(window.scrollY>2800){
+            if(window.scrollY>3040){
                 document.documentElement.style.setProperty("--white","#242424")
                 document.documentElement.style.setProperty("--black","#f9cdcd")
                 document.documentElement.style.setProperty("--white-nav","#242424")
                 document.documentElement.style.setProperty("--black-nav","#f9cdcd")
-            }else if(window.scrollY<2800 && window.scrollY>1000){
+            }else if(window.scrollY<3040 && window.scrollY>1000){
                 document.documentElement.style.setProperty("--white","#f1f1f1")
                 document.documentElement.style.setProperty("--black","#242424")
                 document.documentElement.style.setProperty("--white-nav","#f1f1f1")
                 document.documentElement.style.setProperty("--black-nav","#242424")
             }
-            // console.log((window.scrollY-2930>0 && window.scrollY<3330))
-            if(window.scrollY<2930){
-                textbox.current.style.top=0+"px"
-            }
-            if (window.scrollY-2930>0 && window.scrollY<3330){
-                textbox.current.style.top = (window.scrollY-2930)+"px"
-            }
-            if(window.scrollY>3330){
-                textbox.current.style.top = 400+"px"
-            }
+            console.log((window.scrollY))
 
         })
 
