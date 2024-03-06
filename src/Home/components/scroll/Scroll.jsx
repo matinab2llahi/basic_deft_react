@@ -27,7 +27,7 @@ function Scroll(){
                 document.documentElement.style.setProperty("--white-nav","#f1f1f1")
                 document.documentElement.style.setProperty("--black-nav","#242424")
             }
-            if(window.scrollY>4300){
+            if(window.scrollY>4000){
                 document.documentElement.style.setProperty("--white","#f1f1f1")
                 document.documentElement.style.setProperty("--black","#242424")
                 document.documentElement.style.setProperty("--white-nav","#f1f1f1")
