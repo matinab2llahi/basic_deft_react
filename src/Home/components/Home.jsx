@@ -9,6 +9,7 @@ import SliderHeader from './slider/SliderHeader.jsx';
 import SliderBody from "./slider/SliderBody.jsx";
 import Scroll from "./scroll/Scroll.jsx";
 import News from "./news/News.jsx";
+import Footer from "./footer/Footer.jsx";
 function Home() {
     return (
         <>
@@ -23,6 +24,7 @@ function Home() {
             </section>
             <Scroll/>
             <News/>
+            <Footer/>
         </>
     )
 }
