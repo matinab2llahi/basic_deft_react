@@ -52,9 +52,61 @@ function App() {
           text:"Ongoing partnership providing strategy, branding, experience design, and development focused on bringing their mission and offerings to consumers through brand-led programs and platforms. Read our full case study "
       }
   ]
+  const BACE_NEWS = [
+      {
+          title:"The new roadmap for auto brands"
+          ,name:""
+          ,url:"https://cdn.sanity.io/images/8nn8fua5/production/162fd00622e522dddacedbb98f34181c860a6bbd-1000x734.png?w=720&fm=webp&q=65"
+          ,date:"8.1.23"
+      }
+      ,
+      {
+          title:"Breaking Through the Branding Blahs"
+          ,name:""
+          ,url:"https://cdn.sanity.io/images/8nn8fua5/production/662f84ebd1a959663ce02b538af1acef645219b6-2000x1468.png?w=720&fm=webp&q=65"
+          ,date:"6.16.23"
+      }
+      ,
+      {
+          title:"Ryan Parkhurst moderates talk on “The art and science of brand purpose and creativity”"
+          ,name:""
+          ,url:"https://cdn.sanity.io/images/8nn8fua5/production/8d1b579ad65366a487e57e88035fbd660124ee38-870x544.png?w=720&fm=webp&q=65"
+          ,date:"6.5.23"
+      }
+      ,
+      {
+          title:"John Waters, Bare Walls, and Sparking Creativity"
+          ,name:""
+          ,url:"https://cdn.sanity.io/images/8nn8fua5/production/7bfa1142f0f770512f035212055fb32dedc8b75b-1000x734.png?w=720&fm=webp&q=65"
+          ,date:"5.15.23"
+      }
+      ,
+      {
+          title:"BASIC/DEPT® is the 27th Webby Awards: Agency of the Year"
+          ,name:""
+          ,url:"https://cdn.sanity.io/images/8nn8fua5/production/7015b4f1394f3902d211e59c17901811843cda0e-870x544.png?w=720&fm=webp&q=65"
+          ,date:"4.25.23"
+      }
+      ,
+      {
+          title:"BASIC/DEPT® secures 19 Nominations for the 27th Annual Webby Awards"
+          ,name:""
+          ,url:"https://cdn.sanity.io/images/8nn8fua5/production/0e9b0c41307ada39df2f12ac6299e868bdf6b58f-871x545.png?w=720&fm=webp&q=65"
+          ,date:"4.4.23"
+      }
+      ,
+      {
+          title:"Women’s History Month Spotlight at B/D®"
+          ,name:""
+          ,url:"https://cdn.sanity.io/images/8nn8fua5/production/d8caa7e7da57ee7d1075bc99445288555a37a54b-870x544.png?w=720&fm=webp&q=65"
+          ,date:"4.3.23"
+      }
+
+  ]
+
     return (
         <>
-            <Context.Provider value={[URL_VIDEO_HEADER, BASC_NAV_LINKS, URL_GALLERY,BACE_SLIDER]}>
+            <Context.Provider value={[URL_VIDEO_HEADER, BASC_NAV_LINKS, URL_GALLERY, BACE_SLIDER, BACE_NEWS]}>
                 <Home/>
             </Context.Provider>
         </>
