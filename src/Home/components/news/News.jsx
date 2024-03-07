@@ -12,7 +12,7 @@ function News(){
         <section className={"sec_news"}>
             <div className={"news container"}>
                 <div className={"news_box__header d-flex justify-content-between align-items-center"}>
-                    <h1 className="text-uppercase fw-bold w-25">FEATURED NEWS</h1>
+                    <h1 className="title text-uppercase fw-bold w-25">FEATURED NEWS</h1>
                     <button className={"hover_btn m-0 text-uppercase"}>view all</button>
                 </div>
                 <NewsItems/>

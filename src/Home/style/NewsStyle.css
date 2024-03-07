@@ -1,5 +1,6 @@
 .sec_news .news{
     margin-block: 140px;
 }
-.sec_news .news_box__header{
+.sec_news .news_box__header .title{
+    color: var(--black) !important;
 }
