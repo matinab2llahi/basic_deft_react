@@ -24,7 +24,8 @@
 .sec_news .news_items__img {
     overflow: hidden;
     width: 300px;
-    /*height: 250px;*/
+    height: 185px;
+    margin-right: 20px !important;
 }
 .sec_news .news_box__body img{
     width: 100% !important;
@@ -43,7 +44,8 @@
 }
 .sec_news .news_box__body .news_items__text a{
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: clamp(.4rem,3vw,1.8rem);
+    margin-bottom: 20px !important;
 }
 .sec_news .news_box__body li:hover a{
     text-decoration: underline;
@@ -66,4 +68,13 @@
 }
 .sec_news .news_box__body li:hover  svg{
     transform: translateX(40px);
+}
+@media  (300px <= width <= 1200px) {
+    .sec_news .news_box__body li{
+        flex-direction: column;
+    }
+    .sec_news .news_box__body .news_items__text{
+        padding: 0;
+        padding-top: 20px;
+    }
 }

@@ -21,6 +21,7 @@
 .home_intro li svg{
     transition: all .4s;
     width: 90%;
+    margin-bottom: 40px !important;
 }
 .home_intro li:hover svg{
     width: 100%;

@@ -38,7 +38,7 @@ function HeaderLogo(){
 function HeaderTitle(){
     return(
         <div className={"footer___title"}>
-            <p>We collaborate with ambitious brands and people. Let's build. <a href={""}>biz@basicagency.com</a></p>
+            <p>We collaborate with ambitious brands and people. Let's build. <a href={""}><span style={{textDecoration:"underline"}}>biz@basicagency.com</span></a></p>
         </div>
     )
 }

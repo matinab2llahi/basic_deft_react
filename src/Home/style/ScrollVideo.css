@@ -1,12 +1,17 @@
 .scroll_box__video{
     width: 50% !important;
     overflow: hidden;
-    /*left: 51%;*/
-    /*transform: translateX(-50%);*/
     color: var(--black) !important;
 }
 .scroll_box__video video{
     width: 100% !important;
     height: 140vh !important;
     object-fit: cover;
+}
+@media  (300px <= width <= 1000px) {
+    .scroll_box__video{
+        width: 100% !important;
+        height: 80vh;
+        margin-bottom: 30px;
+    }
 }

@@ -58,7 +58,7 @@ function SliderBody(){
                     arrows:false,
                     pagination:false,
                     perPage:3,
-                    padding:"10%"
+                    padding:"12%"
                 }}
             >
                 {
@@ -69,7 +69,7 @@ function SliderBody(){
                                     <div className="slider_box__icon">
                                         <img loading="lazy" alt={`${event.name} logo photo`} src={event.icon}/>
                                     </div>
-                                    <div className="slider_box__text ">
+                                    <div className="slider_box__text">
                                         <h5 className={'text-uppercase fw-bolder m-0 mb-3'}>
                                             {event.name}
                                         </h5>

@@ -6,18 +6,20 @@
 }
 .gallery ul{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 50px !important;
+    height: 100vh !important;
 }
 .gallery ul li {
     cursor: pointer;
     width: 32%;
-    height: 120vh !important;
+    height: 90%;
     padding: 15px 10px !important;
     list-style: none;
 }
 .gallery .gallery__img{
-    margin-bottom: 20px;
+    margin-bottom: clamp(10px,1.5vw,20px) !important;
     overflow: hidden;
 }
 .gallery li img, video{
@@ -31,7 +33,7 @@
     padding: 0;
     margin: 0;
     width: 70%;
-    font-size: 14px;
+    font-size: clamp(9px,1.5vw,14px);
 }
 .gallery li .hover_a{
     font-size: 23px;
@@ -40,6 +42,7 @@
     text-decoration: none ;
 }
 .gallery li a{
+    font-size: clamp(15px , 1.5vw, 26px) !important;
     text-decoration: none;
 }
 .gallery li:hover video{

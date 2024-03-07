@@ -75,7 +75,7 @@
 }
 
 .slider_body .slider_box__icon img{
-    height: 40px;
+    height: clamp(30px,1.5vw,40px) !important;
 }
 .slider_body .slider_box__icon:before{
     content: "";
@@ -88,6 +88,10 @@
     left: 0;
 
 }
-.slider_body .slider_box__text{
+.slider_body .slider_box__text h5{
+    font-size: clamp(15px,1.5vw,26px) !important;
+}
+.slider_body .slider_box__text p{
     margin-bottom: 10px;
+    font-size: clamp(9px,1.5vw,20px) !important;
 }

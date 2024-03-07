@@ -21,7 +21,7 @@ function Gallery(){
                                     <div className="gallery__img">
                                         {event.url.split(".mp4").length === 2? <video src={event.url} autoPlay muted loop></video>:<img src={event.url} alt=""/>}
                                     </div>
-                                    <div>
+                                    <div >
                                         <a className="hover_a">{event.title}</a>
                                         <p className="">{event.body}</p>
                                     </div>

@@ -17,6 +17,18 @@
 }
 .sec_scroll .scroll___title{
     font-weight: bold;
-    font-size: 60px;
+    font-size: clamp(1rem,4vw,20rem) !important;
     color: var(--black) !important;
+}
+@media  (300px <= width <= 1000px) {
+    .sec_scroll{
+        position: static !important;
+    }
+    .sec_scroll .scroll {
+        position: static !important;
+        flex-direction: column-reverse;
+    }
+    .sec_scroll .scroll_box__text{
+        position: static !important;
+    }
 }

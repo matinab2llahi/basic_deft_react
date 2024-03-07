@@ -10,7 +10,22 @@
 .work__item h2{
     width: 55%;
     font-weight: 500;
+    font-size: clamp(15px, 1.5vw ,25px) !important;
 }
 .work__item svg{
     width: 40%;
+}
+@media  (300px <= width <= 600px) {
+    .work{
+        margin-left: 40px !important;
+    }
+    .work__item{
+        flex-direction: column;
+    }
+    .work__item h2{
+        margin-bottom: 20px !important;
+    }
+    .work button{
+        margin: 0 !important;
+    }
 }
