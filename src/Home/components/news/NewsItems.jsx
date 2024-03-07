@@ -17,7 +17,7 @@ function NewsItems(){
                                     src={event.url}
                                     alt={event.name}/>
                             </div>
-                            <div className={"news_items__text ps-4 w-50"}>
+                            <div className={"news_items__text w-50"}>
                                 <a className={"text-uppercase fw-medium p-0 m-0"}>{event.title}</a>
                                 <span className={"text-uppercase"}><b className={"pe-2"}>Press</b>{event.date}</span>
                             </div>
