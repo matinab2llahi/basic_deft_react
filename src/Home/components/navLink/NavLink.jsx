@@ -11,12 +11,13 @@ import '../../style/NavLinks.css'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function NavLinkFuction(){
+    let max = 0
     // get data
     const [ , BASC_NAV_LINKS]=useContext(Context)
     // ref nav box
     const navRef = useRef(null);
     // status nav box
-    const [max, setMax] = useState(0)
+    // const [max, setMax] = useState(0)
     const [toggleWhite, setToggleWhite] = useState(new Boolean())
     const setRoot =(name, val)=>{
         document.documentElement.style.setProperty(name, val)
@@ -36,14 +37,14 @@ function NavLinkFuction(){
                 setRoot("--white-nav", "#f1f1f1")
             }
             if(max < window.scrollY){
-                setMax(window.scrollY)
+                max=(window.scrollY)
             }
             if(window.scrollY > 0){
                 //hide
                 navRef.current.style.top = "-25%"
             }
             if(max > window.scrollY){
-                setMax(window.scrollY)
+                max=(window.scrollY)
                 if(max > 0){
                     navRef.current.style.top = "0px"
                 }
