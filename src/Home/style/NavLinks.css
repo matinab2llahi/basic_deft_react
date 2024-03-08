@@ -3,7 +3,7 @@
     position: fixed;
     right: 0;
     left: 0;
-    top: 0;
+    top: -25%;
     transition: all .3s cubic-bezier(0, 0.39, 0.8, 0.73);
     z-index: 9999;
     height: 140px;
