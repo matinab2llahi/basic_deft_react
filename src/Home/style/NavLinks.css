@@ -94,6 +94,10 @@
     text-align: center;
     width: 40px;
     top: 28px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
 }
 .nav_menu__items.active{
     top: 60px;

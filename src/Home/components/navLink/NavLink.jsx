@@ -10,7 +10,8 @@ import '../../style/NavLinks.css'
 //add bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
 
-function NavLinkFuction(){
+function NavLinkFuction({ToggleMenu,setToggleMenu}){
+
     let max = 0
     // get data
     const [ , BASC_NAV_LINKS]=useContext(Context)
@@ -25,6 +26,7 @@ function NavLinkFuction(){
     // update nav hide
     useEffect(() => {
         if(max===0){
+            navRef.current.style.top = "0px"
             setRoot("--white-nav", "#ffffff00")
             setRoot("--black-nav", "#f1f1f1")
         }
@@ -95,9 +97,9 @@ function NavLinkFuction(){
                             })
                         }
                     </ul>
-                    <div className={`nav_menu__items ${toggleWhite?"active": "disabled_active"}`}>
+                    <button onClick={()=>setToggleMenu(true)} className={`nav_menu__items ${toggleWhite?"active": "disabled_active"}`}>
                         {toggleWhite ? "MENU" :"..."}
-                    </div>
+                    </button>
                 </div>
             </Nav>
         </>

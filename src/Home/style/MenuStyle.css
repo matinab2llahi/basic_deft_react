@@ -1,0 +1,86 @@
+.sec_menu{
+    position: fixed;
+    transition: all .5s;
+    top: 0;
+    left: -100vw;
+    z-index: 10000;
+    height: 100vh;
+    width: 100vw;
+    background-color: #242424;
+    color: #f9cdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec_menu.active{
+    left: 0;
+}
+.sec_menu .menu{
+    position: relative;
+}
+/*haeder*/
+.sec_menu h2{
+    margin: 0;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+/*body */
+.sec_menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sec_menu ul>li{
+    padding:20px 0 !important;
+}
+.sec_menu a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width: 300px ;
+    height: 30px ;
+}
+.sec_menu a>span{
+    text-transform: uppercase;
+    color: #f9cdcd;
+}
+.sec_menu a>svg{
+    position: absolute;
+    transition: all .4s;
+    right: 30px;
+    opacity: 0;
+    height: 30px !important;
+}
+.sec_menu a:hover span{
+    text-decoration: underline;
+}
+.sec_menu a:hover svg{
+    right: 0;
+    opacity: 1;
+}
+/*clous*/
+.sec_menu .menu button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /*height: 30px;*/
+    width: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #f1f1f1;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+}
+.sec_menu .menu button>span{
+    transform: rotate(45deg);
+    font-weight: bold;
+    position: absolute;
+    top: -28px;
+    right: 5px;
+    font-size: 50px;
+    color: #aa0000;
+}
